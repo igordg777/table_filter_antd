@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import TableComponent from './components/TableComponent'
 import ButtonUseState from './components/ButtonUseState';
+import Modal from './components/Modal'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
 
       {/* <TableComponent /> */}
       <ButtonUseState />
+      {/* <Modal /> */}
     </div>
   );
 }
