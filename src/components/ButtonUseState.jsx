@@ -26,6 +26,7 @@ function ButtonUseState() {
       title: 'Сайт',
       dataIndex: 'website',
       key: 'website',
+      render: (website) => <span style={{ color: 'yellow', background: 'black' }}>{website}</span>
     },
     {
       title: 'Телефон',
@@ -42,18 +43,13 @@ function ButtonUseState() {
       dataIndex: 'phone',
       key: 'phone',
       render: (phone) => <a tel={phone}><Modal name={'Позвонить'} phoneNumber={phone} /></a>,
-
     },
-
-
-
-
-
-    // {
-    //   title: 'Address',
-    //   dataIndex: 'address',
-    //   key: 'address',
-    // },
+    {
+      title: 'Подробнее',
+      // dataIndex: 'phone',
+      key: 'column_key',
+      render: object => <Modal name={'Подробнее'} user={object} />
+    },
   ];
   return (
     <>
@@ -88,7 +84,7 @@ function ButtonUseState() {
 
       </div>
       <div style={{ width: '80%', margin: '0 auto', border: '1px solid black' }}>
-        <Table dataSource={users} columns={columns} />;
+        <Table dataSource={users} columns={columns} />
       </div>
 
     </>
