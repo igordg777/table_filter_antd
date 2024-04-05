@@ -4,15 +4,17 @@ import TableComponent from './components/TableComponent'
 import ButtonUseState from './components/ButtonUseState';
 import Modal from './components/Modal'
 import Message from './components/Message'
+import UseEffectExample from './components/UseEffectExample'
 
 function App() {
   return (
     <div className="App">
 
       {/* <TableComponent /> */}
-      <ButtonUseState />
+      {/* <ButtonUseState /> */}
       {/* <Modal /> */}
       {/* <Message /> */}
+      <UseEffectExample />
     </div>
   );
 }
