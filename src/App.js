@@ -5,6 +5,8 @@ import ButtonUseState from './components/ButtonUseState';
 import Modal from './components/Modal'
 import Message from './components/Message'
 import UseEffectExample from './components/UseEffectExample'
+import UseEffectExampleRepeat from './components/UseEffectExampleRepeat'
+import UseEffectPlaceHolder from './components/UseEffectPlaceHolder'
 
 function App() {
   return (
@@ -14,7 +16,10 @@ function App() {
       {/* <ButtonUseState /> */}
       {/* <Modal /> */}
       {/* <Message /> */}
-      <UseEffectExample />
+      {/* <UseEffectExample /> */}
+      {/* <UseEffectExampleRepeat /> */}
+
+      <UseEffectPlaceHolder />
     </div>
   );
 }
